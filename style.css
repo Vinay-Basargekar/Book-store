@@ -65,6 +65,7 @@ header {
 		font-size: 1.3rem;
 		font-family: var(--font);
 		margin: 0;
+		/* width: 100vw; */
 	}
 }
 .contact-info {
@@ -83,7 +84,7 @@ header {
 .nav-bar {
 	display: flex;
 	align-items: center;
-	gap: 13rem;
+	/* gap: 13rem; */
 	padding: 1rem;
 	font-family: var(--font);
 	img {
@@ -95,7 +96,7 @@ header {
 		display: flex;
 		gap: 4rem;
 		font-size: 1.5rem;
-		text-align: center;
+		/* text-align: center; */
 		margin-top: 1rem;
 	}
 }
