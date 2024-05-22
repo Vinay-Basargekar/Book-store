@@ -48,10 +48,34 @@
 						<li><a href="#jump">Books</a></li>
 						<li>|</li>
 						<li>
-							<a href="https://www.midlandbookshop.com/en/collection/latest"
-								>New Release</a
-							>
+							<a  id="openPopupButton">Add Book</a>
 						</li>
+						<div class="card-popup" id="cardPopup">
+							<span class="close-button" onclick="closePopup()">&times;</span>
+							<form id="bookForm">
+								<label for="bookName">Book Name:</label><br />
+								<select id="bookName" name="bookName"></select
+								><br /><br />
+								<!-- <label for="bookName">Book Name:</label><br />
+				<input type="text" id="bookName" name="bookName" /><br /><br /> -->
+
+								<label for="author">Author:</label><br />
+								<input type="text" id="author" name="author" /><br /><br />
+
+								<label for="pages">Number of Pages:</label>
+								<input type="text" id="pages" name="pages" /><br /><br />
+
+								<label for="status">Status:</label>
+								<select id="status" name="status">
+									<option value="read">Read</option>
+									<option value="unread">Unread</option></select
+								><br /><br />
+								<button class="black-button" id="add-button" type="button">
+									Add
+								</button>
+							</form>
+						</div>
+						<div id="overlay"></div>
 						<li>|</li>
 						<li><a href="registor.html">Register</a></li>
 					</ul>
@@ -262,5 +286,6 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script src="./script.js"></script>
 	</body>
 </html>
